@@ -1,0 +1,10 @@
+IAM Roles for services
+
+-> Some AWS services need to perform tasks on behalf of ours
+-> To do so we assign permissions to AWS services with the help of Roles
+-> Roles are like permissions which are not for users but for services.
+
+Common roles:
+
+EC2 instance rules
+Lambda function rules etc..

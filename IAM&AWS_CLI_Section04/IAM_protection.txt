@@ -1,0 +1,21 @@
+Password Policy:
+
+-> Strong password, high security
+-> In AWS, we can set a password policy:
+    *Set a min password length
+    *Require specific characters
+    *Change password after some time
+    *allow IAM users to change password
+    *donot allow used passwords
+
+
+MFA - Multi-factor Authentication
+
+-> Users have access to our account so we need to protect our account
+-> MFA = password + security device
+-> Benifit: If password is stolen the account is not comprimised
+-> MFA Devices:
+
+Virtual MFA Device: Google authenticator/Authy
+U2F - Universal 2nd factor 
+There are many other options.

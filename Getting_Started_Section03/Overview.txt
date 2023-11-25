@@ -1,0 +1,55 @@
+AWS History
+
+Launched Internally - 2002
+Public SQS - 2004
+SQS, S3 and EC2 - 2006  
+
+and then continued its legacy...
+
+AWS Cloud use-cases:
+
+-> Web-hosting
+-> Servers running on the cloud etc..
+
+AWS Global Infrastructure:
+
+-> AWS Regions
+-> Availability zones
+-> AWS Data centers
+-> AWS Edge locations / Points of Presence
+
+AWS Region
+
+AWS Regions are all over the world
+Names can be US-east-1, eu-west-2 etc
+A region is a cluster of data centers
+Most AWS services are region-scoped
+
+How to choose an AWS Region?
+
+1) Compliance: With government rules and regulations some data must be local to over country.
+2) Proximity: Reduced latency (launch where most of our customers are staying)
+3) Available services within a region: Check which services are available in which region. Accordingly choose a specific region.
+4) Pricing: Varies from region to region. 
+
+AWS Availability zones:
+
+-> Each region have many Availability zones (3-6 generally)
+-> AZ is one or more discrete data centers with redundant power, network and connectivity
+-> They are seperated from each other so that they are isolated from disasters
+-> They are connected with high bandwidth and ultra low latency network 
+
+AWS POP (Points of presence)
+
+-> Has more than 400+ edge locations 
+-> Content is delivered to end users with lower latency 
+
+Some of the global services of AWS are:
+
+1) IAM
+2) Route 53
+3) Cloud Front
+4) Web Access Firewall (WAF)
+
+
+

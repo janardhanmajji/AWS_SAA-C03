@@ -1,0 +1,8 @@
+-> Donot use root account 
+-> Each physical user = AWS user
+-> Users are assigned to groups and assign permissions to groups
+-> Use password and MFA
+-> Use rules when giving permissions to AWS services
+-> Use access keys for CLI and SDK and donot share them
+-> To audit permissions use IAM credentials reports and AWS access advisor.
+

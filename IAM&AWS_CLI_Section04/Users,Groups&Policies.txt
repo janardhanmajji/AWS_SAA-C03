@@ -1,0 +1,19 @@
+IAM - Identity and access management
+
+-> It is a global service
+-> Root account is created default and should not be used or shared
+
+Users and Groups
+
+-> Users are people within our organization and can be grouped
+-> Groups can contain only users and not other Groups
+-> A user may not belong to any group and a user can belong to multiple groups 
+
+
+Permissions:
+
+-> Users and groups can be assigned JSON documents called policies
+-> These policies define the permissions of the user 
+-> IN AWS we apply leasr previliage rule - A user is not given more permissions than needed
+
+

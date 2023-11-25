@@ -7,9 +7,10 @@ Iam preparing from Stephane Mareek Udemy Course.
 
 This contains a total of 33 sections.
 
-Day-1 24/11/2023
+Day-1 25/11/2023
 
 Section 1: Introduction to SAA-C03
 Section 2: Code and Slides Download
 Section 3: Getting started with AWS
 Section 4: IAM and AWS CLI
+Section 5: EC2 Fundamentals

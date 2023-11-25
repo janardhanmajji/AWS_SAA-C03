@@ -1,0 +1,5 @@
+Terminal in the cloud that is free to used
+
+The cool thing about Cloudshell is the files we upload will be saved even if we restart
+The cloudshell is not available in all regions.
+

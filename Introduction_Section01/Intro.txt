@@ -1,0 +1,12 @@
+SAA C0-3
+
+Long and Interesing course
+Around 30 AWS services
+
+Stephane Mareek 
+
+What is AWS?
+
+-> AWS is a cloud provider
+-> They provide us servers that we can use on-demand and scale easily
+-> AWS powers some of the biggest websites in the world like Amazon, Netflix etc.

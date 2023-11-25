@@ -1,0 +1,19 @@
+IAM Policies inheritance
+
+-> Whenever a policy is attached to a group it is applicable to all the users in that group
+-> If a user donot belong to any group then the user is attached to an inline-policy
+-> If a user belongs to multiple groups then the user inherits policies from all the groups 
+
+IAM Policy Structure:
+
+Consists of:
+
+1) Version
+2) Id: Optional
+3) Statement:
+    -> Sid - identifier for Statement
+    -> Effect - whether the statement allows or denys access
+    -> Principle - account/user/role to which the policy is applied to
+    -> Action - list of actions policy allows/denys
+    -> Resource - list of resources to ehich the policy is applied to
+

@@ -1,0 +1,24 @@
+How can users access AWS?
+
+1) AWS management console -> (password+MFA device)
+2) CLI - command line interface -> Access keys
+3) SDK - Software development kit -> Access keys
+
+Access keys are generated through AWS console
+Donot share access keys. They are like password.
+
+CLI?
+
+-> A tool used to interact with AWS services using commands in the command line shell.
+-> Direct access to public api of AWS services
+-> Alternative to AWS management console
+
+SDK?
+
+-> Language specific
+-> Enables to access and manage AWS services programatically
+-> Embedded within the application
+
+SDK's supports Node.js, Go, Ruby etc...
+
+
