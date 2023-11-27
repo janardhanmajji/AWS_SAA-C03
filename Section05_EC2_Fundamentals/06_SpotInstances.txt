@@ -1,0 +1,27 @@
+EC2 Spot instances:
+
+-> We can get a discount upto 90% compared to on-demand
+-> Define max spt price and get the instance when current spot price < max
+    *If the current spot price > max then we need to stop/terminate the instance in 2 minutes
+    *Hourly spot price varies on offer and capacity
+
+-> Spot block (AWS stopped this offering)
+
+* Block spot instancce for (1-6 hours)
+* In rare cases the instances can be re-claimed
+
+-> Used for batch jobs, data analysis and workloads that are resilient to failures
+-> Not great for critical jobs or databases
+
+How to terminate a spot instance?
+
+-> First we need to create a spot request which contains - Maximum price, required no of instances, request type - one time / persistent and valid from and till...
+
+-> One time request:  As soon as the spot request is fulfilled instance is going to be launched and spot request would go away.
+-> persistent request: If instances got stopped/terminated because of rge current spot price then spot request will restart the instance for us.
+-> Cancelling a spot request doesnt terminate our instance
+-> To terminate instance -> "first cancel spot request and then terminate spot instance"
+
+Spot fleets:
+
+Spot Fleets =  set of spot instances + (optional) On-demand instances

@@ -1,0 +1,36 @@
+Naming convention of an instance:
+
+Ex: m5.2xlarge
+
+m: instance class
+5: generation of the instance
+.2xlarge : size within the instance class
+
+1) General purpose instance:
+-> Good balance between compute memory and networking
+-> t2.micro is free tier general purpose instance
+
+2) Compute Optimized:
+-> Great for compute-intensive tasks that requires high-level processor
+Use cases
+    *High performance web servers
+    *High performance computing
+    *Dedicated gaming servers
+-> Most of the compute optimized are of instance class "c"
+
+3) Momory optimized
+-> Large datasets in memory (RAM)
+Use cases:
+    *Real time processing of big unstructured data
+    *In memory databases optimized for BI etc..
+-> Most of them are instance class "c"
+
+
+4) Storage optimized
+-> Access to large datasets in local storage
+Use cases:
+    *OLTP
+    *Relational and NOSQL
+    *Cache for in-memory
+
+-> Start with i,d 

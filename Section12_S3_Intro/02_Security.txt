@@ -1,0 +1,39 @@
+S3 Security
+
+1) User Based:
+
+    * IAM Policy: which API calss should be used by which user from IAM
+
+2) Resource based:
+
+    * Bucket policies: Bucket wide rules from S3 console - allows croos account
+    * Object access control list: finer grain (can be disabled)
+    * Bucket access control list: less common (can be disabled)
+
+
+IAM principal can access S3 object if the user IAM permissions allow it or resource Policy allows it "AND" there is no "explixit DENY"
+
+-> Encryption: encrypt objects in S3 using Encryption keys
+
+**S3 Bucket Policy:
+
+-> JSON Based Policy
+    * Resources: Buckets and objects to which it is applied
+    * Effect: Allow/Deny 
+    * Actions: Set of API which allow or Deny
+    * principal: account/user to which policy is applied
+
+We use S3 bucket policy to:
+    * Grant public access to the bucket
+    * Force objects to be encrypted at the upload
+    * Grant access to another account (Cross- account)
+
+
+Ex: Public Access - Bucket Policy
+
+A user wants to access an S3 bucket then we have to add a bucket policy such that it allows public access. then the user can access the objects in the bucket.
+
+Cross-Acount access - Bucket policy
+
+-> We can also block public access.
+-> This can be set at account level

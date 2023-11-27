@@ -1,0 +1,48 @@
+SG:
+
+-> Security Groups are the fundamental of network security in AWS
+-> Control how the traffic is allowed into or out of the EC2 instance
+-> SG have only allow rules
+-> SG can refer by IP or by other Security Groups
+
+Deep dive:
+
+-> SG are like "firewall" for EC2 instance
+-> They regulate
+    *Access to ports
+    *Authorized IP ranges
+    *Control inbound network (from outside to the instance)
+    *control outbound network (from instance to outside)
+
+Good to know:
+
+-> An instance can have multiple SG
+-> A SG can be attached to multiple instances
+-> They are locked to region/VPC combination
+-> It lives outside the EC2 instance
+
+-> It is good to maintain seperate SG for SSH access.
+-> If the application is not accessible - "time out" then it is SG issue
+-> If application gives "connection refused" error, then it is application error 
+
+Default settings:
+-> All inbound traffic is blocked
+-> All outbound traffic is Authorized
+
+Referencing SG from other SG:
+
+-> Lets assume we have 4 instances A,B,C,D
+
+-> A has security groups x and y as inbound
+-> B has security group x and trying to communicate with A. It communicates as it has the same SG as A and the inbound is not stopped
+-> C has security group y and it behaves same as B
+-> D has security group z and it cannot communicate with A. 
+
+Classic ports to know:
+
+*80 - access unsecured websites
+*443 - access secured websites
+*3389 - RDP - Remote desktop protocol
+*22 - SSH - login to Linux instance
+*22 - SFTP -Secure file transfer protocol
+*21 - FTP - File transfer protocol

@@ -1,0 +1,105 @@
+Purchasing options:
+
+1)On demand: short workload, predictable pricing, pay per second
+
+2) Reserved instances:
+-> 1 and 3 years
+-> Reserved instances: long workloads
+-> Convertible Reserved instances: long workloads with flexibility
+
+3) Savings plan:
+-> 1 and 3 years
+-> Instead of committing to specific instance type we commit to specific amount of usage 
+
+4) Spot instances:
+-> Short workloads 
+-> very cheap and can loose instances
+-> less Reliable
+
+5) Dedicated hosts: 
+-> Book an entire  server
+-> Control instannce placement
+
+6) Dedicated instances:
+-> no other customers will share your hardware
+
+7) capacity reservation:
+reserve capacity in a specific az for any amount of time
+
+On demand:
+
+-> Pay per use 
+    *Linux and windows: pay per second - after the first minute
+    *Other - billing per hour
+
+-> Has the highest cost but no up-fromt payment (advance payment)
+-> suitable for unpredictable workloads
+-> used for short term and un-interrupted workloads
+
+Reserved instances:
+
+-> Upto 72% discount compared to On-demand
+-> Reserve a specific attribute that is (instance type, region, tenancy, OS)
+-> Reservation period: 1 year or 3 years
+-> Options of payment: No upfront, partial upfront(++), full upfront (+++)
+-> Scope: Regional or zonal
+-> You can buy or sell the reserved instances in Marketplace if we no longer needed
+
+Convertible reserved instances:
+
+-> Upto 66% discount
+-> Can change instance type, OS, scope, tenancy
+
+Savings plan:
+
+-> Commit to a certain type of usage (Ex: $10 per hour for 1/3 years)
+-> Beyond that usage we will be billed on-demand
+-> On long term usage
+-> Locked to a specific instance family and region
+
+-> Can change instance size, OS and tenancy
+
+EC2 Spot instances:
+
+-> Upto 90% discount 
+-> Instances can loose at any point of time
+-> Most cost-efficient in AWS
+-> Useful for workloads that are resilient to failure
+-> Not suitable for critical jobs and databases
+
+Dedicated hosts:
+
+-> A physical server with EC2 fully Dedicated to us.
+-> Purchasing options: Ondemand or Reserved
+-> The most expensive
+-> Useful for software that have complicated licensing model or company with strong compliance needs.
+
+Dedicated instances:
+
+-> Instances run on hardware dedicated to you.
+-> May share hardware with other instances in same account
+-> No control over instance placement
+
+Dedicated instance means having our own instance on our own hardware
+Dedicated hosts we get access to the physical server itself
+
+EC2 Capacity reservations:
+
+-> Reserve in-demand instances in a specific az
+-> We get billed on-demand whether we use the instances or Not
+-> always have access to ec2 whenever you need
+-> No time commitment or billing discount
+-> Combine with reserved or savings plan for discount
+
+******* Suitable for short term, uninterrupted workloads that need to be in specific AZ 
+
+
+Analogy of a hotel:
+
+-> Ondemand: come to the resort, whenever you like and pay the price for the time we stayed
+-> Reserved instances: We already pre-booked for a long time so we get discount
+-> Savings plan: We say that we are going to spend (like 300$ per month) for a certain time and stay in any room type
+-> Spot instances: bid the empty rooms and we may kikked off  any time.
+-> Dedicated hosts: Book the entire building
+-> Dedicated instances: book a room for a period for full price and pay even we donot stay in it.
+

@@ -1,0 +1,23 @@
+Versioning in S3
+
+-> We can version your files in S3
+-> We can enable this in bucket level
+-> We overwrite the files by using version 1,2,3 etc...
+
+Why versioning? 
+    * Easy rollback to previous version
+    * Prevent unintended deletion of our data 
+
+What happens if we upload any file before enabling versioning?
+***The version of that particular file will be "null"
+
+
+*** Disabling versioning will not delete our previous versions..
+
+
+-> If we want to roll back to our previous version go to show versions and delete the particular version id
+
+*********** Cool thing:
+
+If we donot delete the version id instead we delete a particular object it doesnot delete permanantly but it creates a delete marker (with another version id) cool right. So we can get the object back by deleting the delete marker (WTF!!!)
+

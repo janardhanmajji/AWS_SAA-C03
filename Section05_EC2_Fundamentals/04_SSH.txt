@@ -1,0 +1,6 @@
+-> SSH is a command line interface which can be used on MAC, Linux, WIndows >10
+-> Putty is for any windows 
+-> EC2 instance connect: use webbrowser to connect to EC2 instance
+
+
+-> SSH allows you to control a remote machine using command line

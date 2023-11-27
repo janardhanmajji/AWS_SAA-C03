@@ -1,0 +1,78 @@
+1) S3 standard - general purpose
+2) s3 standard - infrequent access
+3) one_zone_infrequent_access
+4) glacier_instant_retrieval
+5) glacier_flexible_retrieval
+6) glacier_deep_archieve
+7) Intelligent tiering
+
+-> Can move between classes manually or using lifecycle configurations
+
+Durability and availability:
+
+Durability:
+
+-> No of objects that can be lost by s3
+-> High durability (99.9999.... (11 9's)) 
+-> Same for all storage classes
+
+availability:
+
+-> How readily a service is available
+-> Varies on storage classes
+standard has 99.99% availability
+
+*** S3 Standard - General purpose:
+
+-> 99.99% availability
+-> used for frequently accessed data
+-> low latency and high throughput
+Use cases: Data analytics, Gaming and content distribution.
+
+** S3 Infrequent access:
+
+-> Less frequently accessed but rapid access when needed
+-> Lower than S3 Standard
+-> S3 Standard IA - 99.9% available
+Use cases: Disaster Recovery and backups
+
+** one_zone_infrequent_access:
+
+-> high durability
+-> data lost when az is destroyed
+-> 99.5% availability
+Use cases: secondary backups or data we can re-create
+
+----Glacier
+
+-> Low cost for archieving
+-> Pricing: Price for storage + price for retrieval 
+
+glacier_instant_retrieval: 
+* Millisecond retrieval
+* Minimum storage duration - 90 days
+
+glacier_flexible_retrieval:
+* expedited (1-5 minutes)
+* Standard (3-5 hours)
+* Bulk (5-12 hours)
+
+* Minimum storage duration - 90 days.
+
+glacier_deep_archieve:
+-> Long term storage
+* Standard : 12 hours
+* Bulk : 48 hours
+
+* Minimum storage duration: 180 days..
+
+Intelligent tiering:
+
+-> Move objects between access tiers based on usage
+-> No retrieval charges
+
+-> frequent access tier: default and automatic
+-> infrequent access tier:  object not accessed for 30 days and automatic
+-> archieve instant access tier: objects not accessed for 90 days and automatic
+-> archieve access tier: configurable from 90 days to 700+ days and optional
+-> deep archieve access tier: configurable from 180 days to 700+ days and optional

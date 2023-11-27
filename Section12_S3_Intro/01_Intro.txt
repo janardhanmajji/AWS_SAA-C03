@@ -1,0 +1,48 @@
+S3
+
+-> Advertised as "infinitely scaling storage"
+-> Many websites use S3 as backbone
+-> Many AWS services integrate with S3
+
+Use cases:
+* Backup and storage
+* Disaster Recovery
+* Archieve files
+* Hybrid cloud storage
+* Host applications
+* Big data analytics etc..
+
+Ex: Nasdaq and Cisco
+
+Buckets:
+
+-> S3 stores files into Buckets
+-> The files are called objects and they are stored in Buckets
+-> Buckets must have a globally unique name
+-> Buckets are defined at region-level
+-> They look like a global service but they are confined to a region
+
+Naming convention:
+
+* No uppercase, No underscore
+* 3-63 characters
+* Must not be IP
+* must start with lowercase or any number
+
+Objects:
+
+Objects(files) have a key
+Key is the full path of the file
+
+Key: Prefix + Object name
+
+-> There is no concept of "directories" in S3
+-> The keys are just a long name that contain slashes
+-> Object values are the content of the body
+    * Max upload size is 5TB (5000GB)
+    * If content > 5GB then use multi part upload
+
+-> Object can also have 
+    *meta data (key-value pairs) 
+    *version Id
+    *tags - for lifecycle purposes etc...

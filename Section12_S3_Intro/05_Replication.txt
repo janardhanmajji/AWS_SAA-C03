@@ -1,0 +1,18 @@
+Replication - CRR and SRR
+
+-> Must enable versioning in both buckets
+-> CRR - Cross region Replication
+-> SRR - Same region Replication
+-> Buckets can be in different AWS accounts
+-> Copying is asynchronous
+-> Must give proper IAM permissions to S3
+
+Note:
+
+* After enabling replication only new objects are replicated.
+* S3 batch replication: used for replicating existing objects and objects that failed replication
+ --Delete options
+ * Can replicate delete markers (optional)
+ * deletions with version id are not replicated
+
+ * No chaining. EX: B1 has replication into b2 and b2 has replication into b3 then b1 objects will not be replicated to b3...

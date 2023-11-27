@@ -1,0 +1,3 @@
+-> S3 can host static websites
+-> URL will be depending on the region
+-> If we donot have public read it gives 403 forbidden error

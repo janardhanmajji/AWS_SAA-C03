@@ -1,0 +1,32 @@
+Amazon EC2
+
+-> EC2 is one of the most popular AWS offering
+-> It stands for elastic compute cloud and It is **infrastructure as a service**
+-> It has many capabilities like:
+    *Renting VM's
+    *Storing data on virtual drives
+    *Distributing load across machines etc..
+
+EC2 sizing and configuration options:
+
+1) Os: Linux, windows and MacOS
+2) How much compute power and CPU's
+3) RAM and storage
+4) Network card and firewall rules
+5) Bootstrap script
+
+-> It is possible to Bootstrap our instance using EC2 user data script.
+-> bootstapping means launching commands when a machine starts
+-> The script is run only once when the instance starts at first.
+-> EC2 user data used to boot automate tasks like installing software, updates, downloading common files etc
+-> EC2 user data script runs with the root user
+
+EC2 user data types:
+
+t2.micro
+t2.xlarge
+c5d.4xlarge
+r5.16xlarge
+m5.8xlarge
+
+t2.micro is free tier....
