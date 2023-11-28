@@ -14,9 +14,7 @@
   <script>
     var tofetch = document.getElementById("tofetch");
 
-    fetch(
-      "http://demo-other-origin-stephane.s3-website.ca-central-1.amazonaws.com/extra-page.html"
-    )
+    fetch("http://demo-other-origin-jana.s3-website-us-west-1.amazonaws.com/")
       .then((response) => {
         return response.text();
       })

@@ -1,0 +1,14 @@
+S3 Object Lambda
+
+-> We use this to change the object before being retrieved by the caller application
+
+
+How it works?
+
+-> The user calls the S3 Object Lambda access point
+-> It invokes the Lambda function
+-> The Lambda function access through S3 Access point which invokes S3 Bucket
+
+Use cases:
+* Redacting personally identifiable information
+* Converting data formats like JSON to XML etc.,,

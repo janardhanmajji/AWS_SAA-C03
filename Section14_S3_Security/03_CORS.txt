@@ -1,0 +1,14 @@
+CORS
+
+-> Cross-Origin Resource sharing
+-> Origin = scheme(protocol) + host(domain) + port 
+
+** It is a web browser based mechanism to allow requests to other origins while visisting the main origin.
+Ex:
+http://example.com/app1 & http://example.com/app2 are same origin 
+http://example.com/app1 & http://other.example.com are different 
+
+If we have different origins the request will not be fulfilled unless the other origin allows request using CORS headers
+
+** IN AWS S3 if a client makes a cross-origin request on our S3 bucket we need to enable the correct CORS headers..
+** We can allow specific origin or all origins..

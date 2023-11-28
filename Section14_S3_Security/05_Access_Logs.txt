@@ -1,0 +1,8 @@
+S3 Access Logs:
+
+-> Any request from S3 allowed or denied from any account is logged into another S3 Bucket
+-> This data can be used for data analysis tools
+-> The target logging bucket must be in the same region
+
+Warning:
+-> Donot setup your logging bucket to be monitored bucket as it creates a logging loop and it will grow exponentially

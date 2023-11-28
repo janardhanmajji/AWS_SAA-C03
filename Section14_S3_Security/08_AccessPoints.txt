@@ -1,0 +1,22 @@
+Access points:
+
+Assume an S bucket has both finance data and sales data. And we have a set of users who want to access   
+    *finance people - finance data --> /finance/
+    *sales people - sales data --> /sales/
+    *analytics people - both finance and sales data but only read
+
+To manage this they have created access points.
+Ex: finance access point is connected to finance data using policy which gives read/write access.
+
+
+With proper IAM permissions we can access the access points and connect to a specific data.
+
+*Access points simplify access to security management of S3 Buckets
+*Each access point have 
+    *its own DNS name (Internet origin or VPC origin)
+    *access point policy
+
+VPC origin
+
+* we can define the access point to be accessible from within the VPC 
+* create a VPC EndPoint to access the access point.

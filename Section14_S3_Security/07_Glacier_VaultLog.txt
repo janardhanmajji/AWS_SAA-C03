@@ -1,0 +1,26 @@
+S3 Glacier Vault Log
+
+-> It is used to Adopt a WORM Model --> Write Once Read Many model 
+-> Used when we want to store and never want to modify or delete it 
+-> Create a vault lock policy and lock for future edits
+
+** Helpful for compliance and data retention
+
+S3 Object Lock 
+
+-> For S3 Object lock versioning must be enabled
+-> Adopt a WORM Model (Write once Read Many) model
+-> Block an object version deletion for a specific amount of time
+-> retention modes:
+Compliance
+    *Object versions cannot be deleted by any user including root user
+    *Retention modes cannot be changed and retention period cannot be shortened
+
+Governanace:
+    *Most users cannot delete an object version or alter its lock settings
+    *Some users have special permissions (through IAM)
+
+Retention period: protect the object for a fixed time and it can be extended
+Legal Hold: 
+    *protect the object indefinitely independent from retention period 
+    *used using IAM permission

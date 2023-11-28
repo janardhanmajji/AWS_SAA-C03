@@ -1,0 +1,6 @@
+
+-> SSE-S3 encryption is automatically applied to new objects dtored in S3 we can change it...
+-> Optionally we can use a "force encryption" using bucket policy (SSE--KMS OR SSE-C)
+ 
+ ********** Bucket policies are always evaluated before default encryption
+ i.e., Bucket policies  >>>>>>>>>> default encryption

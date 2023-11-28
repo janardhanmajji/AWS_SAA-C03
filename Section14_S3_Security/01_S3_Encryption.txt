@@ -1,0 +1,72 @@
+Object Encryption:
+
+We can encrypt objects in S3 Buckets using one of the 4 methods:
+
+1) SSE
+    *SSE-S3
+    *SSE-KMS
+    *SSE-C 
+
+2) CSE
+
+*****************
+
+SSE-S3 -> Server side Encryption
+
+* Encryption using keys handled, managed and owned by AWS
+* Object is encrypted server side
+* Encryption type is AES-256
+* Enabled by default for new Buckets and new objects
+
+Usr uploads a file and that object is paired with S3 Own key and performs Encryption.
+
+*********************
+
+SSE-KMS -> Server side Encryption - Key management system
+
+* Encryption using keys handled and managedusing AWS-KMS
+* Advantages: User control over keys+ audit key using cloud trail
+* Encrypted at server side
+
+User uploads a file and that object is paired with KMS key and performs Encryption.
+If we need to access the object we need the access to the object and the KMS key.
+
+Limitations:
+It has certain limits (5500,10000 requests/sec) based on the region
+We can request a quota increase using Service Quota console
+
+*************************
+
+SSE - C 
+
+* Fully managed by the customer outside AWS
+* S3 donot store the Encryption key we provide
+* HTTPS must be used
+
+**************************
+
+Client-side Encryption:
+
+* Use Client libraries like amazon S3 Client-side Encryption library
+* Client must encrypt the data themselves before sending to S3
+* Client must decrypt the data themselves before retrieving from S3
+* customer fully manages keys and Encryption cycle
+
+***************************
+
+
+
+Encryption in transit/in flight
+
+-> ALso called SSL/TLS
+-> S3 exposes 2 end points
+    * HTTP Endpoint: non encrypted
+    * HTTPS Endpoint: Encryption in flight 
+
+-> HTTPS is recommended
+-> SSE - C Https Is mandatory
+
+** aws:secureTransport is attached to bucket policy to allow only HTTPS users
+
+-> We can also change the default encryption method....
+-> SSE-C can be done only through AWS-CLI 
