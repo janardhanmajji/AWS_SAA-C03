@@ -1,0 +1,8 @@
+S3 Requester Pays:
+
+-> In general the bucket owner pays all the storage and data transfer costs assosciated with their buckets.
+
+-> The Requester downloads the files from the bucket and networking cost also billed to the owner.
+
+-> If there are high networking costs with large datasets then with the help of "Requester pays" the Requester pays the networking cost instead of the owner.
+-> For this the Requester must not be anonymous and must be authenticated with AWS.

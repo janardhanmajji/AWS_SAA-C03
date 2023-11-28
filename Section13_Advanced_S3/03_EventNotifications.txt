@@ -1,0 +1,20 @@
+Event Notifications:
+
+* Events in S3 are like ObjectCreated, ObjectReplicated, ObjectRestored etc...
+* We can filter these Events
+* Use cases: Automating events 
+    Ex: generate thumbnails of images uploaded to S3
+* We can generate as many "Event Notifications" we want.
+
+* S3 events delivers events in seconds but sometimes it may take a minute or longer
+
+IAM Permissions:
+ 
+* To make event Notifications to work we need IAM Permissions.
+* For ex: S3 send data to SNS   -> SNS resource access policy must be attached to SNS
+* For ex: S3 send data to SQS   -> SQS resource access policy must be attached to SQS
+
+Generally S3 event notofication targets are SNS, SQS and LAMBDa
+But with the help of Amazon Event Bridge we can set 18 Services as destinations...
+
+

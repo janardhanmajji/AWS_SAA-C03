@@ -1,0 +1,16 @@
+Batch Operations:
+
+-> Perform Bulk operations on S3 objects with a single request.
+Ex:
+
+    *Modify object meta data and properties
+    *Encrypt unencrypted objects
+    *Restore objects from Glacier
+    *Invoke lambda function to perform custom operation
+
+Use cases:
+    *Manage retries
+    *Track progress
+    *Send completion notifications
+
+* we can use S3 inventory to get objects list and S3 Select to filter objects 

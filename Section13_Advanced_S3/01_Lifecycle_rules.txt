@@ -1,0 +1,47 @@
+Lifecycle rules:
+
+-> We can transition objects between storage classes
+
+Transition path: 
+
+-> Standard -> IA -> Intelligent Tiering -> One-zone IA -> GLacier instant -> Glacier flexible -> Glacier deep archieve
+
+* We can move/transition manually but to do it automatically we use Lifecycle Rules 
+
+Lifecycle rules:
+
+** Transition Actions:
+    * Specify when to transition to another storage class.
+    Ex: Move to glacier after 6 months
+        Move to IA after 90days etc..
+
+** Expiration actions:
+    * configure objects to delete after sometime.
+    Ex: Delete all the versions of an object after 1 month
+        Delete incomplete multi-part upload after 2 weeks
+        delete log files after 365 days
+
+** Rules can be created by a certain prefix
+** Rules can be created for a certain object tag
+
+Scenario 1:
+Application on EC2 creates thumbnails after photos are uploaded to S3. These thumbnails can be easily recreated and need to be kept only for 60 days. The source image should be immediately retrieved for 60 days later they can wait for 6 hours. How to design?
+
+1) Source image must be in Standard for 60 days.
+2) Later move them to glacier flexible
+
+1) Keep them for 60 days in one zone IA
+2) After 60 days using Lifecycle policy delete them.
+
+Scenario 2:
+Deleted objects must be recovered immediately for 30 days. 30-365 days they must be recoverable within 48 hours.
+
+1) Enable versioning for the object and store the deleted object in "Standard IA" for 30days
+2) Later shift to glacier deep archieve
+
+
+S3 Analytics:
+
+* Helps to decide when to transition object to the right storage class.
+* Report is updated daily
+* 24-48 hours to start data analysis

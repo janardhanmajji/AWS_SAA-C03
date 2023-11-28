@@ -1,0 +1,8 @@
+S3 Select:
+
+-> Retrieve less data using SQL by performing Server-side filtering
+-> Filter rows and columns using simple SQL
+-> Less network transfer and CpU Cost
+* Before S3 Select to retieve data we retrieve complete data and filter at applicatiion side
+* We filter at server side 
+* 400% faster and 80% cheaper

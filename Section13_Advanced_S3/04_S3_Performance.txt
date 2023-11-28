@@ -1,0 +1,28 @@
+S3 Baseline performance
+
+-> Amazon S3 automatically scales to high request rates, latency 100-200 ms
+-> There are no limits to the no of prefixes in a bucket:
+
+object path -> Prefix 
+
+bucket/folder1/sub1/file -> folder1/sub1
+bucket/folder2/sub2/file -> folder2/sub2
+
+-> We can achieve 3500 put/post/delete or 5500 get request per second per prefix in a bucket.
+
+
+S3 performance:
+
+* Multi-part uploads: 
+    *recommeded for files > 100MB and must for files > 5GB
+    *can help in parallilze uploads (speeds up transfers)
+
+* S3 transfer-accelaration:
+    *Increase target speed by transfering file to AWS Edge location which forwards the data to S3 bucket in target region
+    *Comitable with Multi-part upload. 
+
+* S3 Byte-Range fetches:
+    *Used to speed up dowloads
+    *Paralleleize gets by requesting "byte range fetches"
+    *better resilience in case of failures
+    ***Can be used to retrieve partial data
