@@ -1,0 +1,41 @@
+CloudFront
+
+-> CloudFront is a content delivery network
+-> It improves the read performance by caching the content at edge locations
+-> Low latency and improves user experience
+-> 410 POP(Point of presence) globally - edge locations
+-> It has DDOS Protection, integration with Shield and Web application firewall
+
+Origins of CloudFront:
+
+1) S3:
+    * For distributing files and caching then at the edge
+    * We can use Origin access control (OAC) to make sure that only clounfront can access S3 
+    * Cloudfront can also be used as ingress - to upload files to S3 
+
+2) Custom Origin: (HTTP)
+    * ALB
+    * EC2 
+    * S3 Website
+    * Any HTTP Backend
+
+At a high level:
+
+-> Whenever a client sends a request to edge location if it has the particular content it sends the response
+-> Else it sends the request to the origin and gets it and stores in the local cache.
+
+S3 as an origin:
+
+-> The S3 Bucket must have S3 Bucket policy + Origin access policy to send data to edge locations.
+
+
+CloudFront:
+    *Global Edge network
+    *Files are cached for a TTL
+    *Great for static content that must be available everywhere
+
+S3 Cross Region Replication:
+    *Must be setup for each Region you want replication to happen
+    *Files are updated in near-real time
+    *Read only
+    *Great for dynamic content that must be available with low-latency in a few Regions

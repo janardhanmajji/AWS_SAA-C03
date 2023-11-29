@@ -1,0 +1,8 @@
+Geographic restrictions:
+
+We can allow/deny specific users from specific countries to allow usage of Cloud Front or deny usage of Cloud Front.
+
+-AllowList: List of countries to allow usage 
+-BlockList: List of countries whuch are banned from accessing our content
+
+UseCase: Copyright 

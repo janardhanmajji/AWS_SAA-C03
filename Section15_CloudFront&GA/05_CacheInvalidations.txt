@@ -1,0 +1,11 @@
+Cache Invalidations:
+
+-> Our cloudfront has an origin and our origin has a backend
+-> If we update our backend, the cloudfront doesnot know about it 
+-> We get the updated content only after TTL expired
+
+-> But we want the new content to be served as soon as possible
+-> So we can perform an entire or partial cache refresh (bypassing TTL) by performing cloudfront invalidation 
+-> We can invalidate all files(*) or a special path(/images/*)
+
+TTL - Time to live

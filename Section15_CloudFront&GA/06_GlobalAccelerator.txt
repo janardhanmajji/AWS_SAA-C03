@@ -1,0 +1,26 @@
+Global Accelerator:
+
+-> We have deployed an application in a region but we have global users for it
+-> They go over the internet to access but may have latency issues due to many hops
+-> We wish to go as fast as possible to minimize latency 
+
+UniCast IP vs AnyCast Ip:
+
+UniCast Ip: one server holds one IP Address
+AnyCast Ip: all servers hold the same ip and the client is redirected to the nearest one 
+
+**AWS Global Accelerator uses the concept of AnyCast Ip to work
+
+-> We have an application in a region and have client all over the world
+-> When the client tries to connect to the application they connect to the Edge locations
+-> The edge location connects directly to the application with the help of AWS private network which gives low latency
+-> This uses AnyCast Ip which sends to the nearest edge location
+
+*Work with ElaticIp, EC2, ALB, NLB etc..
+*Consistent performance
+*It also has health checks
+*Great for disaster recovery
+*DDOS protection
+
+Global Accelerator: No cache
+cloudfront: cache content

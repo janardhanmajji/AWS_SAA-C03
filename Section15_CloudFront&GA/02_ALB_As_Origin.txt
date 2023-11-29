@@ -1,0 +1,14 @@
+ALB/EC2 as origin:
+
+EC2 as origin:
+
+-> The EC2 Has a Security group which must allow Public IP of edge locations
+-> The ec2 must also be Public 
+-> Now the client accesses the edge locations and the edge locations accesses the EC2 instances
+
+ALB as origin:
+
+->  The ALB Has a Security group which must allow Public IP of edge locations
+-> The ALB must also be Public
+-> The EC2 connected to ALB can be private or public but the Security group of ec2 must allow Security group of ALB
+-> Now the client accesses the edge locations and the edge locations accesses the ALB
