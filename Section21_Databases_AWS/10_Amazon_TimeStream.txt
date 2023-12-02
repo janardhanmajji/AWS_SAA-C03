@@ -1,0 +1,8 @@
+Amazon TimeStream:
+
+-> Fully managed, serverless and time series database
+-> Automatically scales up and down
+-> SQL Compatibility
+-> 1000 times faster and 1/10th cost of relational databases
+-> Recent data - memory and historical data - cost optimized storage
+-> Encryption in transit and at rest 

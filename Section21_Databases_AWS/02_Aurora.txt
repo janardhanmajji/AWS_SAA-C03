@@ -1,0 +1,14 @@
+Aurora:
+
+-> For Mysql and Postgresql
+-> Storage: data is stored in 6 replicas across 3AZ available, self-healing and auto-scaling
+-> Compute: Cluster of DB Instances across multi AZ, aoto-scaling of read replicas 
+-> Cluster: custome end points for writer and reader DB instance 
+
+Aurora serverless: for un-predicatble workloads, no capacity planning
+Aurora Multi-Master: Used when we need continuous write (high write availabilty)
+Aurora Global: upto 16 Read Replicas in each region (<1 second storage replication)
+Aurora Machine Learning: perform SageMaker and Comprehend 
+Aurora Database Cloning: new cluster from existing one...
+
+Use cases: Same as RDS with more feautures and flexibilty and less maintainane

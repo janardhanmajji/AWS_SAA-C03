@@ -1,0 +1,12 @@
+Amazon Keyspaces:
+
+-> Apache Cassandra is open-source for No-SQL distributed database 
+-> Amazon keyspaces is Apache Cassandra compitable database service
+-> Serverless, Scalable and highly Scalable
+-> Capacity: On demand and provisioned mode with auto-scaling
+-> Tables are replicated 3 times across multi-AZ
+-> Uses Cassandra Query Language
+-> Single digit milli second latency 
+-> Automatically scales up/down based on application traffic
+
+**** Apache Cassandra === Amazon keyspaces

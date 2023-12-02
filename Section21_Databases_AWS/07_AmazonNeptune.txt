@@ -1,0 +1,11 @@
+Neptune:
+
+-> Fully Managed Graph database 
+-> Ex: Social Network
+-> Highly available across 3 AZ and upto 15 read replicas 
+-> Highly connected databases 
+-> Store upto millions of relations and query with milliseconnd latency 
+-> Highly available
+
+
+**** Graph  ----- Neptune

@@ -1,0 +1,12 @@
+RDS
+
+-> It is a managed Mysql /PostgreSQL /MariaDB /SQL server/ Oracle
+-> It can take automatic backup and retain upto 35 days
+-> For manual retention we can use manual DB Snapshot
+-> We have to provision Instance size, EBS Volume Type and size 
+-> Auto-scaling for storage
+-> Has Read-replicas and multi-AZ 
+-> Security through IAM, SG, KMS and SSL in Transit 
+-> RDS custom to access to and customize the underlying Instance (only for ORACLe and SQL server)
+
+**** Store relational database sets, perform SQL queries and transactions

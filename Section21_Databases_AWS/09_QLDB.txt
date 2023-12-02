@@ -1,0 +1,13 @@
+QLDB:
+
+-> QLDB stands for Quantum Ledger Database
+-> A Ledger is a book recording financial transactions
+-> Used to "review all the changes made to the application data" over time
+-> Highly available, Serverless and Replication across 3 AZ
+-> It is an immutable system: no record in the Database can be modified or removed
+-> This is cryptographically verifiable
+-> Manipulate data using SQL 
+-> QLDB doesnot have a decetralization
+
+
+*** financial transactions and Ledger ----- QLDB is the answer

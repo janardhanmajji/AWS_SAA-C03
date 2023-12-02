@@ -1,0 +1,8 @@
+DocumentDB:
+
+-> Aurora is AWS version of PostgreSQL AND MySQL SIMILARLY DocumentDB is "AWS version of MongoDB"
+-> It is a NOSQL database
+-> It is used to store, index and query JSON data 
+-> Similar deployment concepts as "Aurora"
+
+*** MongoDB - NOSQL - DocumentDB

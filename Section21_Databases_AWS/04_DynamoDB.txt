@@ -1,0 +1,18 @@
+DynamoDB :
+
+-> It is proprietary property of AWS and it is not open-source
+-> It is NOSQL and managed serverless database
+-> It has millisecond latency
+-> Capacity modes: On-Demand Capacity or provisioned capacity with options auto-scaling
+-> Can replace ElastiCache for storing key-value pairs
+-> Highly available, Multi az
+-> DAX Cluster (DynamoDB Accelerator) -> Microsecond read latency 
+-> Event Processing: SynamoDB Streams Integrates with AWS Lambda or Kinesis data streams 
+-> Security and authentication done through IAM 
+-> Global Table feature: active-active setup 
+-> Automatic backup upto 35 days or on-demand backups 
+-> Export to S3 and import to S3 without anything
+
+*** Great to rapidly evolve schemas
+
+Use cases: serverless applications development..

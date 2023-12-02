@@ -1,0 +1,10 @@
+ElastiCache:
+
+-> Managed Redis/Memcached (similar offering of RDS but for caches)
+-> In-memory data store (sub-millisecond latency)
+-> Select an ElastiCache instance 
+-> Support for clustering (Redis), Multi az and read replicas
+-> Security through IAM, SG , KMS and redis Auth 
+*** -> Requires some application code change to be leveraged
+
+Use case: Frequent read and less write, cannot use SQL on ElastiCache

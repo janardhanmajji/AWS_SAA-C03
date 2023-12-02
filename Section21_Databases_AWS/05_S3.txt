@@ -1,0 +1,12 @@
+S3
+
+-> Data is stored as objects in buckets
+-> Key-value store for objects 
+-> Serverless and infinite scaling 
+-> Max Object size is 5TB 
+-> It has many tiers and lifecycle policies
+-> It has many features and security features 
+-> SSE, SSE-KMS, SSE-C, client side encryptions 
+Performance:   Multipart upload, S3 Transfer Acceleration
+
+Use case: Webhosting, keyvalue for big files etc...
