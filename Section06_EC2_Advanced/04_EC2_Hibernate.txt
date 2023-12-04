@@ -1,0 +1,31 @@
+EC2 hibernate:
+
+States of EC2: Terminate and Stop
+    Stop: The data on the disk (EBS) is kept for the next start 
+    Terminate: any EBS setup will also be destroyed 
+
+On start:
+    *First start: OS Boots and EC2 DataScript is run
+    *Next start: OS Boots
+
+Another state: 
+
+hibernate:
+    *The in-memory RAM is preserved
+    *The instance boot is much faster 
+    *Under the hood, RAM state is written to a file in EBS 
+    *The root EBS must be encrypted 
+
+
+Use cases: 
+    Saving the RAM state 
+    Bootup fast 
+
+
+*The RAM size must be <150GB 
+*Not works for Bare metal
+*hibernate must not be more than 60 days 
+
+Hands-on:
+    *From an OS perspective hibernate doesnot mean stop 
+    *The EBS must be large enough to fit the RAM 

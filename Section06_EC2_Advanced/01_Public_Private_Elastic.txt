@@ -1,0 +1,43 @@
+-> Networking has two types og addresses IPV4 and IPV6
+-> IPV4 is the most commomn used and IPV6 is used for IOT devices
+-> IPV4 has 3.7 billiion different addresses [[0-255].[0-255].[0-255].[0-255]]
+
+
+Public Ip vs Private Ip:
+
+-> Public IP is accessible all over the internet whereas private IP is accessible within that organization or within that specific company
+-> Public Ip can communicate with all public Ip's over the internet whereas if a private IP needs to communicate with internet it needs "internet Gateway"
+
+Public Ip:
+
+*Public IP means the machine can be identified all over the internet
+*Their Geo location can be found
+*No two devices can have the same public IP 
+
+Private IP:
+
+*Private IP means the machine can be identified in a specific private network only
+*No two devices in a particular network can have the same IP but two devices in different private network can have same IP 
+*Only a few IP's can be used for Private Ip 
+*They can communicate with Public network (internet) with the help of "internet Gateway"
+
+Elastic IP:
+
+*Whenever we start and stop our EC2 instance the public IP changes
+*If we want to keep the IP fixed we use Elastic Ip 
+*An Elastic IP is a public IPV4 IP yoo own as long as we don't delete it 
+*You can attach it to only one instance at a time 
+*With an elastic IP we can mask the failure of an instance by remapping to another instance
+*We can have only 5 Elastic Ip's in an account 
+
+******Try avoiding Elastic Ip 
+        *Instead use random IP and assign DNS 
+        *Or we can use Load balancer without using Public IP 
+
+
+Things to take from hands on:
+
+-> We can SSH using Public address but not private 
+-> If we stop and start the instance the IP changes 
+-> If we use Elastic IP the address doesn't change 
+-> We can SSH through elastic IP as (Public IP = Elastic IP)

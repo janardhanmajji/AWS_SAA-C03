@@ -1,0 +1,18 @@
+ENI:
+
+*They are logical component in VPC and represents virtual network card 
+*The ENI can have the following attributes:
+    *primary private IPV4, one or more secondary IPV4
+    *One elatic IPV4 per private IPV4
+    *One public IPV4
+    *One or more SG 
+    *A MAC address
+
+*Bound to a specific AZ 
+*You can create them independently and flyover to EC2 instances for failover 
+
+
+Hands-on:
+    *For every EC2 we create we get an ENI 
+    *We can also create our own ENI and attach to any instance we want 
+    *They are AZ specific 

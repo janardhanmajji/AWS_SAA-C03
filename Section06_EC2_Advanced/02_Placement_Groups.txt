@@ -1,0 +1,24 @@
+-> Some times we need control over the placement of the EC2  placement statergy
+-> We donot get access to the underlying hardware but we let AWS know how we want our instances to be placed
+-> There are 3 statergies:
+    *Cluster - low-latency, Single-AZ 
+    *Spread - Spread across hardware (max 7 instances per group per AZ) - critical applications
+    *Partition - Similar to spread across many Partition
+
+
+** Cluster: All EC2 instances are on same rack and same AZ 
+            Drawback: If rack fails all EC2 instances failes at same time 
+            Pros    : Great network with low latency 
+            Use-cases: Big data job and applications which need low latency and high throughput 
+
+** Spread: All EC2 instances are on different hardware
+            Pros: Spread across multi-AZ 
+                  Reduced risk of simultaneous failure
+            Cons: Limited to 7 instances per AZ per placement group 
+            Use cases: Critical applications which must be isolated from failure 
+
+** Partition : 
+        *Each Partition represents a rack in AWS 
+        *To make sure the instances are safe from a rack failure
+        *7 partitions per AZ 
+        *Use cases: HDFS, HBase, Cassandra and Kafka 
