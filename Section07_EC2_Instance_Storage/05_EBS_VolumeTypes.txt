@@ -1,0 +1,23 @@
+EBS Volume Types:
+
+gp2/gp3: General purpose SSD which balances price and performance
+io1/io2: Highest performance SSD for low-latency 
+st1: low cost HDD for frequently accessed 
+sc1: lowest cost HDD for less frequently accessed
+
+General purpose SSD:
+    *cost-effective and low latency 
+    *gp3 is latest version of gp2
+    *In gp3 throughput and IOPS are independent whereas in gp2 they are linked
+
+Provisioned IOPS:
+    *Critical business applications
+    *Great for database workloads 
+    *io2 has more durability and higher IOPS
+    *supports EBS multi-attach
+
+Hard Disk Drives:
+    *throughput optimized - st1
+    *Cold HDD - sc1
+
+    

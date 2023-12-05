@@ -1,0 +1,23 @@
+EBS
+
+-> An EBS (Elastic Block store) is a network drive which can be attached to EC2 while they run 
+-> They allow to persist data even after their termination
+-> They are bound to a specific AZ 
+-> AT a time, One EBS is mounted to a single instance 
+
+EBS Volume:
+
+*It is a network drive not a physical drive
+    *As it is a network drive it uses network to communicate with EC2 due to which there may be latency
+    *It can be attached to another EC2 quickly
+*Bound to specific AZ 
+    *To attach to another AZ we need to take a snapshot 
+
+
+**Two EBS volumes can be attached to Single AZ but Single EBS cannot be mounted to multiple EC2 
+** We can also create EBS volumes and leave them unattached 
+
+
+Delete on termination attribute - By default yes for root volume and no for other volumes and we can change it 
+
+**Controls EBS behaviour when EC2 is terminated 

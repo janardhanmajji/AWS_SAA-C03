@@ -1,0 +1,16 @@
+EBS Encryption:
+
+When you encrypt an EBS:
+    *The data-at-rest is encrypted
+    *The data-in-flight between instance and volume is encrypted
+    *Snapshots are encrypted
+    *volume created from Snapshots are encrypted
+-> Encryption and decryption are transparent 
+-> Minimal impact on latency 
+
+How to encrypt an unencrypted volume?
+
+-> Create a Snapshot
+-> encrypt the Snapshot
+-> Create new Volume from Snapshot
+-> Attach encrypted volume to the original instance

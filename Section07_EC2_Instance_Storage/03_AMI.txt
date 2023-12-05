@@ -1,0 +1,10 @@
+AMI:
+
+*Amazon Machine Image 
+*Customization Of EC2 instance
+    *We can add our own software, configuration, monitoring etc..
+    *Faster boot and configuration time because of pre-packaging 
+*Built for specific region (can be copied)
+*There are both public AMI's and we can do our own AMI's 
+*We can also buy from AWS Market Place 
+

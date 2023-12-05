@@ -1,0 +1,9 @@
+EC2 Instance Store:
+
+-> EBS (network drive) is good but it has "limited performance"
+-> For high performance we need a hardware disk attached to an EC2 instance which is "EC2 instance Store"
+-> It has physical connection to the instance
+-> We will use for better IO performance and better throughput
+-> If EC2 terminated then Instance storage is lost 
+-> It is ephermal (not for long term storage)
+-> Risk of data loss if hardware fails 

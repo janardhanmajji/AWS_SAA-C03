@@ -1,0 +1,19 @@
+EBS Snapshots:
+
+-> Snapshots refer to backup
+-> We can take the backup of EBS volume at any point of time 
+-> We can copy across different AZ
+-> No need to detach EBS volume but recommended 
+
+Features:
+
+*EBS Snapshot archieve: 
+    *75% cheaper
+    *24-72 hours for restoring 
+
+*Recycle bin for EBS Snapshots
+    *Recover from accidental deletion
+    *Can be set from 1 day to 1 year 
+
+*Fast Snapshot restore 
+    *Force full initialization of Snapshot

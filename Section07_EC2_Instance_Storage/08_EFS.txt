@@ -1,0 +1,8 @@
+EFS - Elastic File System
+
+-> It is a managed Network File System that can be mounted on many EC2 instances 
+-> EFS works with EC2 instances in multi-AZ 
+-> It is highly-available, scalable and expensive, pay per use 
+
+*** Only compitable with Linux Based AMI's and not windows 
+-> Scales automatically, pay-per-use  
